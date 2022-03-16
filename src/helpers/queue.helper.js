@@ -1,8 +1,9 @@
 const { faker } = require('@faker-js/faker');
-
 const connection = require("../database/connection");
 
-const maxProcess = 3;
+faker.locale = "pt_BR";
+
+const maxProcess = 5;
 let process = [];
 
 const queue = async () => {
